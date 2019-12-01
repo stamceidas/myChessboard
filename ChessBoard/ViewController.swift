@@ -8,13 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ChessDelegate {
+    
+    
+    
+    var chessEngine = ChessEngine()
 
+    @IBOutlet weak var boardView: BoardView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+            
+        boardView.pieces = chessEngine.pieces
+        boardView.setNeedsDisplay()
+            
+        boardView.chessDelegate = self
     }
-
-
+    
+    func initializeGame(fromCol: Int, fromRow: Int, N: Int) {
+        chessEngine.initializeGame(fromCol: fromCol, fromRow: fromRow, N: N)
+        boardView.pieces = chessEngine.pieces
+        boardView.setNeedsDisplay()
+    }
+        
+    func moveHorse(fromCol: Int, fromRow: Int, toCol: Int, toRow: Int) {
+        chessEngine.movePiece(fromCol: fromCol, fromRow: fromRow, toCol: toCol, toRow: toRow)
+            
+            boardView.pieces = chessEngine.pieces
+            boardView.setNeedsDisplay()
+    }
 }
+
 

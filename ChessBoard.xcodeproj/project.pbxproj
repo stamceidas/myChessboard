@@ -13,6 +13,10 @@
 		0644BAC6238DDCF300EB70DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0644BAC4238DDCF300EB70DD /* Main.storyboard */; };
 		0644BAC8238DDCF700EB70DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0644BAC7238DDCF700EB70DD /* Assets.xcassets */; };
 		0644BACB238DDCF700EB70DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0644BAC9238DDCF700EB70DD /* LaunchScreen.storyboard */; };
+		0644BAD3238DDD6A00EB70DD /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0644BAD2238DDD6A00EB70DD /* BoardView.swift */; };
+		069B62392390796E00053C3D /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B62382390796E00053C3D /* Knight.swift */; };
+		069B623B23907B5900053C3D /* ChessEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B623A23907B5900053C3D /* ChessEngine.swift */; };
+		069B623D2391A73500053C3D /* ChessDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B623C2391A73500053C3D /* ChessDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		0644BAC7238DDCF700EB70DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0644BACA238DDCF700EB70DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0644BACC238DDCF700EB70DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0644BAD2238DDD6A00EB70DD /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		069B62382390796E00053C3D /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		069B623A23907B5900053C3D /* ChessEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessEngine.swift; sourceTree = "<group>"; };
+		069B623C2391A73500053C3D /* ChessDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +69,12 @@
 				0644BAC2238DDCF300EB70DD /* ViewController.swift */,
 				0644BAC4238DDCF300EB70DD /* Main.storyboard */,
 				0644BAC7238DDCF700EB70DD /* Assets.xcassets */,
+				069B62382390796E00053C3D /* Knight.swift */,
+				069B623A23907B5900053C3D /* ChessEngine.swift */,
 				0644BAC9238DDCF700EB70DD /* LaunchScreen.storyboard */,
 				0644BACC238DDCF700EB70DD /* Info.plist */,
+				0644BAD2238DDD6A00EB70DD /* BoardView.swift */,
+				069B623C2391A73500053C3D /* ChessDelegate.swift */,
 			);
 			path = ChessBoard;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069B623B23907B5900053C3D /* ChessEngine.swift in Sources */,
+				069B62392390796E00053C3D /* Knight.swift in Sources */,
+				069B623D2391A73500053C3D /* ChessDelegate.swift in Sources */,
 				0644BAC3238DDCF300EB70DD /* ViewController.swift in Sources */,
+				0644BAD3238DDD6A00EB70DD /* BoardView.swift in Sources */,
 				0644BABF238DDCF300EB70DD /* AppDelegate.swift in Sources */,
 				0644BAC1238DDCF300EB70DD /* SceneDelegate.swift in Sources */,
 			);
