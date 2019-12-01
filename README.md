@@ -1,2 +1,2 @@
 # myChessboard
-Showing all possible 3 moves in a 16x16 chessboard
+Showing all possible 3 moves of a knight in a 16x16 chessboard
